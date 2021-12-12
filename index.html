@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합놀이학교 다동</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        html body {margin: 0; padding: 0; width: 100%;}
+        @font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        /*네비*/
+              .ab {width: 100%;  height: 200px; position: absolute; 
+                margin-left: 63%;
+                z-index: 99;
+                font-size: 40px;
+                color: rgb(0, 0, 0);
+              }
+              .dropmenu{
+                
+                font-size: 1vw;
+                }
+            
+
+                .dropmenu ul{
+                height:100px;
+                list-style:none;
+                margin:0;
+                padding:0;
+                }
+
+                .dropmenu li{
+                float:left;
+                padding:0px;
+                }
+
+                .dropmenu li a{
+                color:#fff;
+                display:block;
+                line-height:100px;
+                margin:0px;
+                padding:0px 25px;
+                text-align:center;
+                text-decoration:none;
+                }
+
+                .dropmenu li a:hover, .dropmenu ul li:hover a{
+                background: rgb(31,31,31);
+                color:#FFFFFF;
+                text-decoration:none;
+                }
+                
+
+                .dropmenu li ul{
+                display:none; 
+                height:auto;
+                border:0px;
+                position:absolute;
+                width:200px;
+                z-index:200;
+                /*
+                .dropmenu li ul{
+                background: red;
+                display:none; 
+                height:auto;
+                border:0px;
+                position:absolute;
+                width:230px;
+                z-index:200;
+
+                */
+
+
+                /*top:1em;
+                /*left:0;*/
+                }
+
+                .dropmenu li:hover ul{
+                display:block;
+                }
+
+                .dropmenu li li {
+                background: pink;
+                display:block;
+                float:none;
+                margin:0px;
+                padding:0px;
+                width: 170px;
+                }
+
+                .dropmenu li:hover li a{
+                background:none;
+                }
+
+                .dropmenu li ul a{
+                display:block;
+                height:80px;
+                font-size:14px;
+                margin:0px;
+                padding:0px 10px 0px 15px;
+                text-align:left;
+
+                }
+
+                .dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+                background: palevioletred;
+                border:0px;
+                color:#ffffff;
+                text-decoration:none;
+                }
+
+                .dropmenu p{
+                clear:left;
+                }
+                    /*슬라이드 1페이지 비디오*/
+                    .jb-box { width: 100%; height: fit-content; overflow: hidden; position: relative;}
+                    video { width: 100%; }
+                    .jb-text { position: absolute; top: 0%; left: 10%; width: 25%; background-color: white;  height: 470px;
+                    padding-left: 5%;
+                    font-family: 'SBAggroB';}
+                    .jb-text3 { position: absolute; top: 0%; left: 10%; width: 25%; background-color: rgb(80, 80, 80);  height: 470px;
+                    padding-left: 5%;
+                    font-family: 'SBAggroB'; color: white;}
+                    
+                    /*버튼*/
+                    .main_btn {padding: 3% 7% 3% 7%; width: fit-content;
+                    border: 2px solid black;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    float: right;
+                    margin-right: 15%;
+                    z-index: 999;
+                    }
+                    .main_btn3 {padding: 3% 7% 3% 7%;  width: fit-content;
+                    border: 2px solid black;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    color: white;
+                    float: right;
+                    margin-right: 15%;
+                    z-index: 999;
+                    }
+                    .main_btn:hover {
+                      background-color: black; color: white;
+                    }
+                    .main_btn3:hover{
+                      background-color: white; color: black;
+                    }
+                    @media (max-width: 800px) {
+                        .jb-text {display: none;}
+                        .ab {margin-left: unset;}
+                        
+                        
+                      }
+                      @media (max-width: 700px) {
+                        
+                        .box2 {height: 550px; font-size: 10px; }
+                        
+                      }
+                    #box2 { background-color: rgb(51, 51, 51); height: 1000px; width: 100%; margin-top: -3%;
+                      color: white;
+                    padding-top: 10%;}
+                    .box21 {
+                      width: 22%; margin-left: 40%;
+                    }
+                
+        </style>
+</head>
+<body>
+  <div class="ab">
+
+    <div class="dropmenu">
+      <ul>
+       <li><a href="#" id="current">CONTENTS</a>
+        <ul>
+          <li><a href="./study.html">교육프로그램</a></li>
+          <li><a href="./product.html">상품</a></li>
+          <li><a href="./event.html">이벤트</a></li>
+          </ul>
+       </li>
+       <li><a href="#">COMMUNITY</a>
+        <ul>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./qna.html">Q&A</a></li>
+          <li><a href="mailto:dadongnori@naver.com">이메일상담</a></li>
+         </ul>
+      </li>
+      <li><a href="#">GALLERY</a>
+        <ul>
+          <li><a href="./gallery.html">사진</a></li>
+          <li><a href="./video.html">영상</a></li>
+         </ul>
+      </li>
+      <li><a href="#">NEWS</a>
+        <ul>
+          <li><a href="./news.html">뉴스</a></li>
+          <li><a href="./pr.html">PR,IR</a></li>
+          <li><a href="./city.html">사회공헌</a></li>
+         </ul>
+      </li>
+      <li><a href="#">DADONG</a>
+        <ul>
+          <li><a href="./index.html#box2">CEO인사말</a></li>
+          <li><a href="./introduce.html">회사소개</a></li>
+          <li><a href="./introduce2.html">사업소개</a></li>
+          <li><a href="./yeon.html">연혁</a></li>
+          <li><a href="./brand.html">브랜드</a></li>
+          <li><a href="./management.html">경영정보</a></li>
+         </ul>
+      </li>
+      </ul>
+      </div>
+    
+
+
+  </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="jb-box">
+                <video muted autoplay loop>
+                  <source src="./video/Kid.mp4" type="video/mp4">
+                </video>
+                <div class="jb-text">
+                  <h1 style="margin-top: 8%;">다동</h1>
+                  <br>
+                  <h1 style="color:rgb(15, 0, 100); font-size: 50px;">우리는 논다!</h1>
+                  <p style="font-family: sans-serif;"><b>화합 ㆍ 즐거움 ㆍ 진심</b></p>
+                  <p class="main_btn">전체화면보기 ></p>
+                </div>
+              </div>
+
+
+          </div>
+          <div class="swiper-slide">
+            <div class="jb-box">
+                <video muted autoplay loop>
+                  <source src="./video/Kids2.mp4" type="video/mp4">
+                </video>
+                <div class="jb-text">
+                  <h1 style="margin-top: 8%;">다동</h1>
+                  <br>
+                  <h1 style="color:rgb(15, 0, 100); font-size: 50px;">우리는 논다!</h1>
+                  <p style="font-family: sans-serif;"><b>화합 ㆍ 즐거움 ㆍ 진심</b></p>
+                  <p class="main_btn">전체화면보기 ></p>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="jb-box">
+                <video muted autoplay loop>
+                  <source src="./video/Carouse.mp4" type="video/mp4">
+                </video>
+                <div class="jb-text3">
+                  <h1 style="margin-top: 8%;">다동</h1>
+                  <br>
+                  <h1 style="color:rgb(255, 255, 255); font-size: 50px;">우리는 논다!</h1>
+                  <p style="font-family: sans-serif;"><b>화합 ㆍ 즐거움 ㆍ 진심</b></p>
+                  <p class="main_btn3">전체화면보기 ></p>
+                </div>
+              </div>
+          </div>
+            <!-- ... -->
+        </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-scrollbar"></div>
+      </div>
+      
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+          var mySwiper = new Swiper('.swiper-container', {
+
+// 3초마다 자동으로 슬라이드가 넘어갑니다. 1초 = 1000
+  autoplay: {
+    delay: 3000,
+  },
+});
+      </script>
+      <div id="box2">
+      <p style="font-size: 2vw; font-weight: bold; padding: 0% 0 0 15%; ">CEO<br>MESSAGE</p>
+      <p class="box21">
+        안녕하세요.<br>
+        통합놀이학교다동사회적협동조합은 '놀이가 곧 삶이자 교육' 이라는 신념으로 풀뿌리 활동과
+        마을 활동을 바탕으로 지역의 취약계층에게 일자리 환경을 제공합니다. <br><br><br>
+        
+        10년 이상 다양한 경력을 지닌 전문가들이 정성된 놀이로 올바른 놀이문화를 형성하고 공동체놀이문화를 확산하고 있습니다.<br><br><br>
+        아동의 건강한 성장을 위해 아이들도 어른들도 잘(스스로, 어울려, 즐기면서) 놀 수 있는 환경을 제공
+        받아야 하고, 함께 행복하게 즐길 수 있어야 합니다.<br><br><br>
+        다양한 이유로 놀이가 필요한 사람 그 누구나 통합놀이학교에서 다동과 함께 놀 수 있습니다. <br>
+        우리 모두의 성장을 위해 언제나 응원해주시고 함께 참여해주시는 모든 정성과 사랑을 행복한 놀이로 보답하겠습니다.
+        감사합니다.<br><br><br>
+        <b>통합놀이학교 다동사회적협동조합</b><br><br><b style="font-size: 1vw;">이미라</b>드림
+
+      </p>
+       
+      </div>
+</body>
+</html>
